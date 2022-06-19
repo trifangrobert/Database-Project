@@ -43,3 +43,14 @@ CREATE TABLE solutions (
     space_complexity varchar2(15) NOT NULL,
     CONSTRAINT fk_problem FOREIGN KEY (problem_id) REFERENCES problems(problem_id)
 );
+
+
+DROP TABLE students;
+CREATE TABLE students(
+    student_id number(5) PRIMARY KEY,
+    first_name varchar2(15) NOT NULL,
+    last_name varchar2(15) NOT NULL,
+    cnp varchar2(15) NOT NULL,
+    age number(5) NOT NULL
+);
+

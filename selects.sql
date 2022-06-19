@@ -1,4 +1,4 @@
---1 JOIN, TO_CHAR, ASYNC select, ORDET BY
+--1 JOIN, TO_CHAR, ASYNC select, ORDER BY
 SELECT p.problem_id, p.problem_name, p.difficulty, a.author_name, TO_CHAR(a.birthday, 'DD/MM/YYYY')
 FROM problems p 
 JOIN proposed_by pb ON p.problem_id = pb.problem_id 
